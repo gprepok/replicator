@@ -1,11 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Scene } from "./scene/scene.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Scene],
   template: `
-    <h1>Welcome to {{ title() }}!</h1>
+    <app-scene>
 
     <router-outlet />
   `,
